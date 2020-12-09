@@ -1,0 +1,51 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Layout.master.cs" Inherits="AppEmpleadosCrud2.App.Layout" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <!-- enlaces a estilos etc (encambezado) -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title> App Empleados </title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    <link href="css/estilos.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="estiloBody">
+    <form id="form1" runat="server">
+        <div>
+            <!-- codigo html menu -->
+            <header class="estiloHeader">
+        <nav class="menuNav">
+            <ul class="menuUl">
+                <li class="menuLi"> <a class="menuLink" href="./Default.aspx"> Home </a></li>
+                <li class="menuLi"> <a class="menuLink" href="./Datos.aspx"> Datos </a></li>
+                <li class="menuLi"> <a class="menuLink" href="Formulario.aspx"> Formulario </a></li>
+                <li class="menuLi"> <a class="menuLink" href="./Nosotros.aspx"> Nosotros </a></li>
+            </ul>
+        </nav>
+    </header>
+            <!-- fin menu -->
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <!-- footer -->
+            <footer class="estiloFooter">
+
+        <h3 class="textoFooter"> by: Jose Dominguez Cuero</h3>
+        <div class="contenedorGib">
+            <div> 
+                <a href="https://github.com/JoseDominguezCuero"> <img class="ico" src="pic/github.png" alt=""></a>
+           </div>    
+           <div> 
+            <small> JoseDominguezCuero </small>
+           </div>
+        </div>
+    </footer>   
+            <!-- fin footer -->
+
+        </div>
+    </form>
+</body>
+</html>
